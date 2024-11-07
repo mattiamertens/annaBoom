@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Berlin Grotesk';
+    font-family: 'Neue Machina';
     src: url('fonts/BerlinGrotesk-Thin.eot');
     src: url('fonts/BerlinGrotesk-Thin.eot?#iefix') format('embedded-opentype'),
         url('fonts/BerlinGrotesk-Thin.woff2') format('woff2'),
@@ -9,7 +9,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Berlin Grotesk';
+    font-family: 'Neue Machina';
     src: url('fonts/BerlinGrotesk-Light.eot');
     src: url('fonts/BerlinGrotesk-Light.eot?#iefix') format('embedded-opentype'),
         url('fonts/BerlinGrotesk-Light.woff2') format('woff2'),
@@ -19,7 +19,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Berlin Grotesk';
+    font-family: 'Neue Machina';
     src: url('fonts/BerlinGrotesk-Regular.eot');
     src: url('fonts/BerlinGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
         url('fonts/BerlinGrotesk-Regular.woff2') format('woff2'),
@@ -29,7 +29,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Berlin Grotesk';
+    font-family: 'Neue Machina';
     src: url('fonts/BerlinGrotesk-Medium.eot');
     src: url('fonts/BerlinGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
         url('fonts/BerlinGrotesk-Medium.woff2') format('woff2'),
@@ -40,7 +40,7 @@
 }
 
 @font-face {
-    font-family: 'Berlin Grotesk';
+    font-family: 'Neue Machina';
     src: url('fonts/BerlinGrotesk-Bold.eot');
     src: url('fonts/BerlinGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
         url('fonts/BerlinGrotesk-Bold.woff2') format('woff2'),
@@ -54,7 +54,7 @@
 body, * {
     margin: 0;
     padding: 0;
-    font-family: 'Berlin Grotesk', sans-serif;
+    font-family: 'Neue Machina', sans-serif;
     font-weight: 300;
     color: white;
     box-sizing: border-box;
