@@ -1,60 +1,30 @@
 @font-face {
-    font-family: 'Neue Machina';
-    src: url('fonts/BerlinGrotesk-Thin.eot');
-    src: url('fonts/BerlinGrotesk-Thin.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BerlinGrotesk-Thin.woff2') format('woff2'),
-        url('fonts/BerlinGrotesk-Thin.woff') format('woff');
+    font-family: 'Neue Machina Mono Light';
+    src: url('assets/fonts/NeueMetanaMono-light.eot');
+    src: url('assets/fonts/NeueMetanaMono-light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/NeueMetanaMono-light.woff2') format('woff2'),
+        url('assets/fonts/NeueMetanaMono-light.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Neue Machina';
-    src: url('fonts/BerlinGrotesk-Light.eot');
-    src: url('fonts/BerlinGrotesk-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BerlinGrotesk-Light.woff2') format('woff2'),
-        url('fonts/BerlinGrotesk-Light.woff') format('woff');
+    font-family: 'Neue Machina Mono Semibold';
+    src: url('assets/fonts/NeueMetanaMono-semibold.eot');
+    src: url('assets/fonts/NeueMetanaMono-semibold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/NeueMetanaMono-semibold.woff2') format('woff2'),
+        url('assets/fonts/NeueMetanaMono-semibold.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: 'Neue Machina';
-    src: url('fonts/BerlinGrotesk-Regular.eot');
-    src: url('fonts/BerlinGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BerlinGrotesk-Regular.woff2') format('woff2'),
-        url('fonts/BerlinGrotesk-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Neue Machina';
-    src: url('fonts/BerlinGrotesk-Medium.eot');
-    src: url('fonts/BerlinGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BerlinGrotesk-Medium.woff2') format('woff2'),
-        url('fonts/BerlinGrotesk-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Neue Machina';
-    src: url('fonts/BerlinGrotesk-Bold.eot');
-    src: url('fonts/BerlinGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BerlinGrotesk-Bold.woff2') format('woff2'),
-        url('fonts/BerlinGrotesk-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 body, * {
     margin: 0;
     padding: 0;
-    font-family: 'Neue Machina', sans-serif;
+    font-family: 'Neue Machina Mono Light', sans-serif;
     font-weight: 300;
     color: white;
     box-sizing: border-box;
@@ -98,6 +68,15 @@ a{
     justify-content: start;
     align-items: center;
 }
+.flex{
+    display: flex;
+}
+.baseline{
+    align-items: baseline;
+}
+.g-24{
+    gap: 24px;
+}
 .fixed{
     position: fixed;
     left: 0;
@@ -108,6 +87,53 @@ a{
 .absolute{
     position: absolute;
 }
-.bold{
-    font-weight: 500;
+.semibold{
+    font-family: 'Neue Machina Mono Semibold', sans-serif;
+}
+.size-24{
+    font-size: 24px;
+}
+.size-20{
+    font-size: 20px;
+}
+
+.nav{
+    padding: 24px;
+}
+.main-container{
+    gap: 8px;
+    padding: 0 24px;
+    max-height: 80%;
+    height: 80vh;
+    overflow: hidden;
+}
+.main-container > div{
+    width: 33%;
+    height: 100%;
+}
+.personal-text{
+    line-height: 22px;
+    letter-spacing: -0.05rem;
+    background-color: red;
+}
+.project-text{
+    background-color: blue;
+}
+.project-img{
+    position: relative;
+    background-color: green;
+    overflow: scroll;
+}
+.img{
+    width: 100%;
+    height: 30%;
+    background-color: aqua;
+    border: 1px solid black;
+    object-fit: cover;
+}
+.leading{
+    background-color: yellow;
+}
+.slant{
+    font-style: oblique 14deg;
 }
