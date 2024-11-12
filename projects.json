@@ -1,0 +1,29 @@
+const projectInfo2 =
+[
+    {
+        "title": "the Breathing Ground", 
+        "subTitle": "(sub-)terranean architecture as an environmental instrument", 
+        "description": "The Breathing Ground is a research and design project that explores breathing systems and develops a ground bound building for the time of extreme climate. The building - through its shape, physiology and vertical extends - is seen as a climatic apparatus, providing a new public space underground, where temperatures remain stable throughout the year. By studying breathing structures and two case studies - mound building termites and the National Theatre of Vienna - a design proposal raises big questions: What if we were to migrate into the ground as well – like termites do? What if public spaces, cultural centers, or especially windowless spaces such as theater halls - which do not need natural light, but require a good ventilation system - were to be sunk into the ground?",
+        "date": "2023-present",
+    },
+    {
+        "title":"John", 
+        "description":"Doe"
+    },
+    {
+        "title":"John", 
+        "description":"Doe"
+    },
+    {
+        "title":"John", 
+        "description":"Doe"
+    },
+    {
+        "title":"John", 
+        "description":"Doe"
+    },
+    {
+        "title":"John", 
+        "description":"Doe"
+    },
+]
