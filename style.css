@@ -74,8 +74,17 @@ a{
 .baseline{
     align-items: baseline;
 }
+.g-8{
+    gap: 8px;
+}
+.g-16{
+    gap: 16px;
+}
 .g-24{
     gap: 24px;
+}
+.p-24{
+    padding: 24px;
 }
 .fixed{
     position: fixed;
@@ -97,14 +106,11 @@ a{
     font-size: 20px;
 }
 
-.nav{
-    padding: 24px;
-}
 .main-container{
     gap: 8px;
     padding: 0 24px;
-    max-height: 80%;
-    height: 80vh;
+    /* max-height: 80%; */
+    height: calc(100vh - 135.5px);
     overflow: hidden;
 }
 .main-container > div{
@@ -114,26 +120,91 @@ a{
 .personal-text{
     line-height: 22px;
     letter-spacing: -0.05rem;
-    background-color: red;
 }
 .project-text{
-    background-color: blue;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 8px;
+}
+.min-desktop{
+    width: 85%;
+    font-size: 14px;
+}
+.min{
+    display: none;
+}
+.project-text-title-desktop{
+    font-size: 16px;
+}
+.project-text-title{
+    font-size: 16px;
+}
+.project-text-description-desktop{
+    line-height: 20px;
 }
 .project-img{
     position: relative;
-    background-color: green;
     overflow: scroll;
 }
 .img{
     width: 100%;
-    height: 30%;
-    background-color: aqua;
     border: 1px solid black;
     object-fit: cover;
 }
 .leading{
-    background-color: yellow;
 }
 .slant{
     font-style: oblique 14deg;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.rtl{
+    text-align: end;
+}
+.footer{
+font-size: 12px;
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .say-hi{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .main-container{
+        flex-direction: column;
+        overflow: scroll;
+        height: unset;
+    }
+    .main-container > div{
+        width: 100%;
+    }
+    .project-text{
+        display: none;
+    }
+    .project-img{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        overflow: unset;
+        gap: 16px;
+    }
+    .min{
+        display: flex;
+        margin-top: 48px;
+    }
+    .project-text-title{
+        font-size: 16px;
+    }
+    .project-text{
+        font-size: 16px;
+    }
+    .project-text-description{
+        line-height: 20px;
+    }
+
 }
