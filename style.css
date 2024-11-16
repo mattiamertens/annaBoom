@@ -30,7 +30,7 @@ body, * {
     box-sizing: border-box;
 }
 body{
-    background-color: #EBEBEB;
+    background-color: #f4f4f4;
 }
 a{
     text-decoration: none;
@@ -127,10 +127,13 @@ a{
     gap: 8px;
 }
 .min-desktop{
-    width: 85%;
+    width: 80%;
     font-size: 14px;
 }
 .min{
+    display: none;
+}
+.selProjects-mobile{
     display: none;
 }
 .project-text-title-desktop{
@@ -141,6 +144,7 @@ a{
 }
 .project-text-description-desktop{
     line-height: 20px;
+    color: rgb(100, 100, 100);
 }
 .project-img{
     position: relative;
@@ -148,10 +152,13 @@ a{
 }
 .img{
     width: 100%;
-    border: 1px solid black;
     object-fit: cover;
 }
+.separator{
+    margin-top: 100%;
+}
 .leading{
+    margin-top: 48px;
 }
 .slant{
     font-style: oblique 14deg;
@@ -161,6 +168,14 @@ a{
 }
 .rtl{
     text-align: end;
+}
+.rtl *{
+    color: black
+}
+.comingSoon{
+    margin-top: 24px;
+    font-size: 14px;
+    width: 100%;
 }
 .footer{
 font-size: 12px;
@@ -183,6 +198,9 @@ font-size: 12px;
     .main-container > div{
         width: 100%;
     }
+    .personal-text{
+        margin-bottom: 48px;
+    }
     .project-text{
         display: none;
     }
@@ -193,9 +211,15 @@ font-size: 12px;
         overflow: unset;
         gap: 16px;
     }
+    .separator{
+        margin-top: 0;
+    }
     .min{
         display: flex;
         margin-top: 48px;
+    }
+    .leading{
+        margin: 0;
     }
     .project-text-title{
         font-size: 16px;
@@ -205,6 +229,14 @@ font-size: 12px;
     }
     .project-text-description{
         line-height: 20px;
+        color: rgb(100, 100, 100);
+    }
+    .selProjects{
+        display: none;
+    }
+    .selProjects-mobile{
+        display: block;
+        width: 100%;
     }
 
 }

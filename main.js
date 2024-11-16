@@ -103,7 +103,7 @@ const observer = new IntersectionObserver(
 },
 {
     root: document.querySelector('.project-img'),
-    rootMargin: '0px 0px -90% 0px', // Adjust so the top of the container triggers the event
+    rootMargin: '0px 0px -97% 0px', // Adjust so the top of the container triggers the event
     threshold: 0 // Trigger as soon as the div reaches the top
 }
 );
