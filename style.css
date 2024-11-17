@@ -34,6 +34,28 @@ body{
 }
 a{
     text-decoration: none;
+    position: relative;
+}
+a::before{
+    content: "[";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -.8rem;
+    opacity: 0;
+}
+a::after{
+    content: "]";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -.8rem;
+    opacity: 0;
+}
+a:hover::before, a:hover::after{
+    display: block;
+    transition: opacity .5s cubic-bezier(.23,1,.32,1);
+    opacity: 1;
 }
 .exclusion{
     mix-blend-mode: exclusion;
