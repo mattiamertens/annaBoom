@@ -80,7 +80,7 @@ const projectTextTitle = document.querySelector('.project-text-title-desktop');
 const projectTextSubTitle = document.querySelector('.project-text-subTitle-desktop');
 const projectTextDescription = document.querySelector('.project-text-description-desktop');
 const projectTextDate = document.querySelector('.project-text-date-desktop');
-const leadingElements = Array.from(document.querySelectorAll('.project-img .leading'));
+const leadingElements = Array.from(document.querySelectorAll('.leading'));
 
 // Set up the Intersection Observer
 const observer = new IntersectionObserver(
@@ -102,7 +102,8 @@ const observer = new IntersectionObserver(
     });
 },
 {
-    root: document.querySelector('.project-img'),
+    
+    root: document.querySelector('.project-img'), // Element used to intercept the scroll event (aka the parent element)
     rootMargin: '0px 0px -97% 0px', // Adjust so the top of the container triggers the event
     threshold: 0 // Trigger as soon as the div reaches the top
 }
@@ -110,7 +111,7 @@ const observer = new IntersectionObserver(
 
 // Observe each .leading div
 document.querySelectorAll('.leading').forEach((leadingDiv) => {
-observer.observe(leadingDiv);
+    observer.observe(leadingDiv);
 });
 
 leadingElements.forEach((leadingDiv) => observer.observe(leadingDiv));
